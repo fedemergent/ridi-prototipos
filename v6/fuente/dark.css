@@ -1,0 +1,67 @@
+
+/* ===== Modo día / modo noche ===== */
+.themebtn{flex:none;width:46px;height:46px;border-radius:12px;border:2px solid var(--ink);background:#fff;color:var(--ink);display:grid;place-items:center;margin-left:auto;cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.themebtn:hover{background:var(--or-l);transform:rotate(-12deg)}
+.themebtn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.themebtn .sun{display:none}
+.top .burger{margin-left:0}
+@media(min-width:1100px){.themebtn{margin-left:0}}
+.themebtn.sp{position:absolute;top:max(14px,env(safe-area-inset-top,0px));right:max(14px,env(safe-area-inset-right,0px));margin:0;z-index:5;background:rgba(255,255,255,.75);border-color:#0D1B33;color:#0D1B33}
+
+html[data-ridi=dark]{color-scheme:dark;background:#0E1626;--ink:#E9EFF9;--soft:#B9C7DD;--mute:#8EA0BE;--warm:#121C30;--line:#27374F;--or-l:#182742;--or-t:#8FC1FF;--white:#17233A;--cloud:#17233A;--sun:#0E1626}
+html[data-ridi=dark] .themebtn .sun{display:block}
+html[data-ridi=dark] .themebtn .moon{display:none}
+html[data-ridi=dark] .themebtn{background:#17233A}
+html[data-ridi=dark] .themebtn.sp{background:rgba(23,35,58,.85);border-color:#E9EFF9;color:#E9EFF9}
+html[data-ridi=dark] body,html[data-ridi=dark] body::before,html[data-ridi=dark] .util,html[data-ridi=dark] .hero,html[data-ridi=dark] .t-cream.wh,html[data-ridi=dark] .more,html[data-ridi=dark] .top .drop,html[data-ridi=dark] .hflags,html[data-ridi=dark] .utilw.peek .ubox{background:#0E1626}
+html[data-ridi=dark] .top{background:rgba(14,22,38,.94);color:var(--ink)}
+html[data-ridi=dark] .util a,html[data-ridi=dark] .util button{color:#D5E0F2}
+html[data-ridi=dark] .util .join{background:#E9EFF9;color:#0D1B33}
+html[data-ridi=dark] .util .join:hover{background:var(--or);color:#0D1B33}
+html[data-ridi=dark] .menu a{color:#C9D6EA}
+html[data-ridi=dark] .menu a:hover,html[data-ridi=dark] .menu a[aria-current=true]{color:#8FC1FF}
+html[data-ridi=dark] .burger{background:#17233A;color:var(--ink);border-color:var(--ink)}
+html[data-ridi=dark] .drop a,html[data-ridi=dark] .drop a:nth-child(n){background:#17233A;color:var(--ink)}
+html[data-ridi=dark] .t-cream{background:#121C30;--panel:#17233A;--chip:#1E2D49}
+html[data-ridi=dark] .t-cream.wh{--panel:#16223A}
+html[data-ridi=dark] .acc{--panel:#17233A;--chip:#1E2D49}
+html[data-ridi=dark] .row,html[data-ridi=dark] .t-cream.wh .row,html[data-ridi=dark] .com,html[data-ridi=dark] .pillar,html[data-ridi=dark] .mv{background:var(--panel)}
+html[data-ridi=dark] .btn{background:#17233A;color:var(--ink);border-color:var(--ink)}
+html[data-ridi=dark] .btn:hover{background:var(--ink);color:#0D1B33}
+html[data-ridi=dark] .btn.pri{background:var(--or);border-color:var(--or);color:#0D1B33}
+html[data-ridi=dark] .btn.pri:hover{background:var(--ink);border-color:var(--ink);color:#0D1B33}
+html[data-ridi=dark] .btn.on{background:var(--or-l);color:var(--ink)}
+html[data-ridi=dark] .sl-card,html[data-ridi=dark] .rnd,html[data-ridi=dark] .flag,html[data-ridi=dark] .badge,html[data-ridi=dark] .mb .cap,html[data-ridi=dark] .mb{background:#17233A;color:var(--ink)}
+html[data-ridi=dark] .kicker{color:#0D1B33}
+html[data-ridi=dark] .tile .ic{color:#0D1B33}
+html[data-ridi=dark] .tile:hover{color:#0D1B33}
+html[data-ridi=dark] .tile:hover .ic{background:#0D1B33;color:#fff}
+html[data-ridi=dark] .dl{background:var(--or);color:#0D1B33}
+html[data-ridi=dark] .dl i{background:#0D1B33}
+html[data-ridi=dark] .acc.open .chev{background:var(--ink);color:#0D1B33}
+html[data-ridi=dark] .cta-card,html[data-ridi=dark] .t-orange,html[data-ridi=dark] .foot{--ink:#0D1B33;--soft:#2A3850;--mute:#3C4A62;--white:#fff}
+html[data-ridi=dark] .foot{--soft:#B9C7DD}
+html[data-ridi=dark] .hero-fr{filter:invert(.9)}
+html[data-ridi=dark] .hero::before,html[data-ridi=dark] .band.t-cream:not(.wh)::before{opacity:.55}
+html[data-ridi=dark] .mm-card,html[data-ridi=dark] .mm-dir{background:#17233A}
+html[data-ridi=dark] .mm .mm-card .btn:not(.pri),html[data-ridi=dark] .mm .mm-dir .btn{background:transparent;color:var(--ink);border-color:var(--ink)}
+html[data-ridi=dark] .mm .mm-card .btn:not(.pri):hover,html[data-ridi=dark] .mm .mm-dir .btn:hover{background:var(--ink);color:#0D1B33}
+html[data-ridi=dark] .mm-dir input{background:#0E1626}
+html[data-ridi=dark] .mm-av .nm,html[data-ridi=dark] .mm-tip{background:#17233A;color:var(--ink)}
+html[data-ridi=dark] .mm-card .x:hover{background:var(--or-l)}
+html[data-ridi=dark] .mm-dir li .lk a{color:#8FC1FF}
+html[data-ridi=dark] .mm-dir li .lk a:hover{color:#fff}
+/* intro */
+html[data-ridi=dark] .splash{background:linear-gradient(180deg,#0E1626 0%,#101C33 55%,#12233F 100%);color:var(--ink)}
+html[data-ridi=dark] .sp-hello,html[data-ridi=dark] .ends{color:#9FB2D0}
+html[data-ridi=dark] .splash .sp-sub{color:#C9D6EA}
+html[data-ridi=dark] .splash .sp-enter{background:var(--or)!important;border-color:var(--or)!important;color:#0D1B33!important}
+html[data-ridi=dark] .splash .sp-enter:hover{background:#fff!important;border-color:#fff!important}
+html[data-ridi=dark] .fusion{filter:invert(.9) hue-rotate(180deg)}
+html[data-ridi=dark] .scan::after{background:#0E1626}
+html[data-ridi=dark] .bgrib .r2{opacity:.3}
+html[data-ridi=dark] .splash :focus-visible{outline-color:#8FC1FF}
+html[data-ridi=dark] .t-orange .btn:not(.pri){background:#fff;color:#0D1B33;border-color:#0D1B33}
+html[data-ridi=dark] .t-orange .member h2,html[data-ridi=dark] .t-orange .member .eyebrow{color:#0D1B33}
+html[data-ridi=dark] .t-orange .btn.pri{background:#0D1B33;border-color:#0D1B33;color:#fff}
+html[data-ridi=dark] .t-orange .btn:not(.pri):hover,html[data-ridi=dark] .t-orange .btn.pri:hover{background:#fff;color:#0D1B33;border-color:#fff}
